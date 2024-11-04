@@ -1,3 +1,8 @@
+#Cade Stephens
+#cs 5300
+#Norm.py
+#November 3rd
+
 import itertools
 from itertools import combinations
 from collections import defaultdict
@@ -178,7 +183,7 @@ class DatabaseNormalizer:
             self.relations = []
         elif input_type == '2':
 
-            file_path = "D:/programing/2024/database/turnin/input.xlsx"
+            file_path = "D:/programing/2024/database/turnin/input.xlsx"                                       # Adjusted to match your directory, i hardcoded the path for testing, i included .xlsx files for testing in repo.
             parser = self.AdvancedDatabaseParser(file_path)
 
             # Extract relations and functional dependencies from parser
@@ -472,6 +477,14 @@ if __name__ == "__main__":
     normalizer.normalize()
     normalizer.rename_relations()
     normalizer.print_formatted_tables()
+
+
+
+
+
+
+
+
 
 
 
